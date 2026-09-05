@@ -1126,7 +1126,7 @@ def emergency_stats(request):
 
 
 @api_view(['GET'])
-@permission_classes([IsAuthenticated])
+@permission_classes([AllowAny])
 def system_health(request):
     """Get system health status"""
     return Response({
